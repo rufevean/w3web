@@ -1,0 +1,11 @@
+.DocsFooterLeft{
+    display: grid;
+}
+.DocsFooterRight{
+    display: grid;
+    justify-content: end;
+}
+
+.DocsFooterLeftText{
+    color: #fff;
+}

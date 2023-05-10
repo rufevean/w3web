@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+
+.Pools {
+    height: 100vh;
+    background-image: url("C:/code/w3web/Frontend/react-app/src/assets/pools-bg.png");
+    overflow: hidden
+}
+
+.PoolsTitle {
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Jura", sans-serif;
+    margin-top: 4%;
+}
+
+.PoolsTitlehr {
+    width: 6%;
+    margin-left: 47%;
+    margin-top: 5px;
+    border: 1px solid #D8768A;
+}
+.PoolsContent {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    bottom: 0;
+    height: 80%;
+    border: 5px solid rgba(255, 255, 255, 0.37);
+    border-radius: 15px;
+    display: flex;
+}
+
+.PoolsContent-Filter{
+    width: 237px;
+    height: 60px;
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 15px;
+    background-color:#0416199a;
+    color:white;
+    font-family: "Jura", sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.PoolsContent-Search{
+    width: 237px;
+    height: 60px;
+    margin-top:3%;
+    margin-left: 59%;
+    border-radius: 15px;
+    background-color:#041619ab;
+    color:white;
+    font-family: "Jura", sans-serif;
+    font-size: 1.3rem;
+    text-align: right;
+}

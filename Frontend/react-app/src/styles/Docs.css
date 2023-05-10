@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+.Docs {
+    height: 100vh;
+    background-image: url("C:/code/w3web/Frontend/react-app/src/assets/documentation-bg.png");
+    background-position: cover;
+    overflow: hidden;
+}
+
+.DocsTitle {
+    color: white;
+    font-family: 'Jura';
+    font-size: 3rem;
+    margin-left: 15%;
+    margin-top: 2%;
+    font-weight: lighter;
+}
+
+.DocsBody-hr1 {
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 1%;
+}
+
+.DocsFooterLeft {
+    width: 12%;
+    margin-left: 8%;
+    gap: 5px;
+    font-family: "Jura";
+    color: white;
+    justify-content: end;
+}
+
+.DocsFooterLefthr {
+    width: 90%;
+    justify-self: end;
+}
+
+.DocsFooterLeftText {
+    font-size: 1.5rem;
+    margin:5px;
+}
+
+
+.DocsFooterLefttopic {
+    justify-self: end;
+}
+
+.DocsFooterRight {
+    margin-left: 85%;
+    width: 10%;
+    gap: 5px;
+    color: white;
+    display: grid;
+    font-family: "Jura";
+}
+
+
+.DocsFooterRightText {
+    font-size: 1.5rem;
+
+}
+
+/* .DocsFooterLeftTextImg {
+    margin-right: 1%;
+} */
+
+.DocsFooterRightText:hover,.DocsFooterLeftText:hover{
+    color: #D8768A;
+    cursor: pointer;
+}
