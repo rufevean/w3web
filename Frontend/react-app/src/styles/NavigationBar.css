@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+.NavigationBar{
+    margin: 45px 3%;
+    display: flex;
+    font-family: 'Jura', sans-serif;
+    color:white;
+}
+
+.NavigationBar-Logo{
+    width: 12%;
+    font-size: 2.5rem;
+}
+
+.NavigationBar-Build{
+    margin-top: 5px;
+    width: 10%;
+    font-size: 1.8rem;
+}
+
+.NavigationBar-Build:hover, .NavigationBar-ExplorePools:hover{
+    color: #D8768A;
+    cursor: pointer;
+}
+
+.NavigationBar-ExplorePools{
+    margin-top: 5px;
+    margin-left: 49%;
+    width: 17%;
+    font-size: 1.8rem;
+}
+
+.NavigationBar-WalletConnect{
+    width: 8%;
+    border-radius: 10px;
+    border: 0px transparent;
+    background: none;
+    background-color: #D8768A ;
+    font-size: 1.3rem;
+    font-family: 'Jura', sans-serif;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavigationBar-WalletConnect-Image{
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 8%;
+}
+

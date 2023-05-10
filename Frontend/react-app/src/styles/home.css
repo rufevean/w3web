@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+html {
+  background-image: url("C:/code/w3web/Frontend/react-app/src/assets/homepage-bg.png");
+  background-size: 100%;
+  background-position-y: 60%;
+  background-position-x: 60% ;
+}
+
+.Home-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 11%;
+    color: rgb(255, 255, 255);
+}
+
+.Home-Content-Title{
+    font-size: 16rem;
+    font-weight: 550;
+    font-family: "Jura", sans-serif;
+}
+.Home-Content-Subtitle{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Jura", sans-serif;
+    margin-top: -2%;
+}
+
+
+.Home-Footer{
+  display: grid;
+  margin-left: 85%;
+  color:white;
+  font-family: 'Jura', sans-serif;
+  font-size: 2rem;
+  text-align: right;
+  margin-top:8%;
+  margin-right: 3%;
+  gap:3px;
+}
+
+
+
+
+.Home-Footer-Docs:hover,.Home-Footer-Contact:hover,.Home-Footer-Governance:hover{
+  color: #D8768A;
+  text-decoration: underline;
+  cursor: pointer;
+}
