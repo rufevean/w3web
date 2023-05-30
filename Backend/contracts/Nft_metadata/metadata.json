@@ -1,0 +1,40 @@
+{
+    "name":"Property #1",
+    "description":"3 bhk flat in Noida",
+    "image":"",
+    "external_url":"",
+    "attributes": [
+        {
+            "trait_type": "Leagal Owner",
+            "value": "ArxProperties"
+        },
+        {
+            "trait_type": "Property Type",
+            "value": "Flat 3BHK"
+        },
+        {
+            "trait_type": "Property Address",
+            "value": "Random Noida Address"
+        },
+        {
+            "trait_type": "Property Size",
+            "value": "1500 sq. ft."
+        },
+        {
+            "trait_type": "Property Rent",
+            "value": "15,000 INR/month / 0.095 ETH/month",
+            "display_type": "number"
+        },
+        {
+            "trait_type": "Property Price",
+            "value": "3 crore INR / 190 ETH",
+            "display_type": "number"
+        },
+        {
+            "trait_type": "Property Shares",
+            "value": 350,
+            "display_type": "number",
+            "max_value": 1000
+        }
+    ]
+}
