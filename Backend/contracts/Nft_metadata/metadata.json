@@ -1,0 +1,40 @@
+{
+    "name":"Property #1",
+    "description":"8 BHK Villa in Los Santos",
+    "image":"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlsbGF8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+    "external_url":"",
+    "attributes": [
+        {
+            "trait_type": "Leagal Owner",
+            "value": "ArxRealEstate"
+        },
+        {
+            "trait_type": "Property Type",
+            "value": "Villa 8BHK"
+        },
+        {
+            "trait_type": "Property Address",
+            "value": "A 0014, 68th st. Los Santos, San Andreas, USA"
+        },
+        {
+            "trait_type": "Property Size",
+            "value": "1500 sq. ft."
+        },
+        {
+            "trait_type": "Property Rent",
+            "value": "15,000 INR/month / 0.095 ETH/month",
+            "display_type": "number"
+        },
+        {
+            "trait_type": "Property Price",
+            "value": "3 crore INR / 190 ETH",
+            "display_type": "number"
+        },
+        {
+            "trait_type": "Property Shares",
+            "value": 350,
+            "display_type": "number",
+            "max_value": 1000
+        }
+    ]
+}
