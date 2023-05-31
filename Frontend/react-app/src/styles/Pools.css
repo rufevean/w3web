@@ -3,7 +3,7 @@
 
 .Pools {
     height: 100vh;
-    background-image: url("C:/code/w3web/Frontend/react-app/src/assets/pools-bg.png");
+    background-image: url("../src/assets/pools-bg.png");
     overflow: hidden
 }
 

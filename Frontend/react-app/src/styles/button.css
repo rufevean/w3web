@@ -1,0 +1,8 @@
+.WalletConnect{
+	background:transparent;
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 80%;
+	border : 0px solid transparent;
+	z-index: 1000;
+}
