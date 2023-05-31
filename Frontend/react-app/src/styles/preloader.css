@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background : url("../assets/Gradient.png")
+}
+
+.outer__circle {
+    animation-name: outer;
+    animation-duration: 1200ms;
+    animation-fill-mode: forwards;
+    background-color: #D8768A;
+/*    border: 1px solid black;*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+
+    margin: 0 auto;
+    animation-timing-function: ease;
+    margin-top: 5%;
+}
+
+
+@keyframes outer {
+    0% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9)  0%, white 0% 100%)
+    }
+
+    5% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 5%, white 5% 100%)
+    }
+
+    10% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 10%, white 10% 100%)
+    }
+
+    15% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 15%, white 15% 100%)
+    }
+
+    20% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 20%, white 20% 100%)
+    }
+
+    25% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 25%, white 25% 100%)
+    }
+
+    30% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 30%, white 30% 100%)
+    }
+
+    35% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 35%, white 35% 100%)
+    }
+
+    40% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 40%, white 40% 100%)
+    }
+
+    45% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 45%, white 45% 100%)
+    }
+
+    50% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 50%, white 50% 100%)
+    }
+
+    55% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 55%, white 55% 100%)
+    }
+
+    60% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 60%, white 60% 100%)
+    }
+
+    65% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 65%, white 65% 100%)
+    }
+
+    70% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 70%, white 70% 100%)
+    }
+
+    75% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 75%, white 75% 100%)
+    }
+
+    80% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9) 80%, white 80% 100%)
+    }
+
+    85%{
+        background: linear-gradient(to right,rgba(216, 118, 138,0.9) 85%, white 85% 100%)
+    
+    }
+
+    90% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9)  90%, white 90% 100%)
+    }
+
+    95% {
+        background: linear-gradient(to right, rgba(216, 118, 138,0.9)  95%, white 95% 100%)
+    }
+
+    100% {
+        background: rgba(216, 118, 138,0.9)
+    }
+}
+
+.inner__circle {
+
+   
+    background-color: rgba(255 ,255, 255,1);
+    border: 1px solid rgba(216, 118, 138,0.9);
+    width: 165px;
+    height: 165px;
+    margin: 8% auto; 
+/*    border-radius: 50%;*/
+
+
+}
+
+.inner__text{
+    font-weight: 800;
+    animation-name: inner;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    font-family: 'Jura', sans-serif;
+    color:black;
+    font-size: 1.1rem;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 37%;
+    text-align: center;
+    transform: rotate(315deg);
+}
+
+
+@keyframes inner {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+    
+}
+
+
+.inner__circle :hover{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.preloader-arx{
+/*    position: absolute;*/
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 7rem;
+    font-family: "Jura";
+    font-weight: 700;
+
+}
+
+.preloader.clicked .inner__circle {
+    transform: scale(20);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    overflow: visible;
+  }
+
+.preloader.clicked .outer__circle {
+    opacity: 0;
+    transition: opacity 1s ease-out;;
+    overflow: visible;
+
+}
+
+
+.preloader.click .preloader-arx{
+        opacity: 0;
+    transition: opacity 1s ease-out;;
+}   
+
