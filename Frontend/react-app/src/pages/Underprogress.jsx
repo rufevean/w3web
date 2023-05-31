@@ -13,7 +13,6 @@ export default function Underprogress(){
 		<div className="underprogress">
 			
 		< Button />
-			< Button />
 			<div className="apology">
 				
 				<img src={sorry} />

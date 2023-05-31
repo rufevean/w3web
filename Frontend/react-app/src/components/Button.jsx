@@ -4,15 +4,12 @@ import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { arbitrum, mainnet, polygon } from 'wagmi/chains';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import NavigationBar from '../components/NavigationBar';
 
 export default function Button() {
   const chains = [arbitrum, mainnet, polygon];
-
   const projectId = '62a2482225e42c242517244788886f64';
-
-  // Configure Web3Modal and EthereumClient
   const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
   const wagmiConfig = createConfig({
     autoConnect: true,
@@ -23,18 +20,31 @@ export default function Button() {
 
   const [isWalletConnected, setIsWalletConnected] = useState(false);
 
+  useEffect(() => {
+    connectWallet();
+
+    // Cleanup function to handle wallet disconnection
+    return () => {
+      disconnectWallet();
+    };
+  }, []);
+
   async function connectWallet() {
     try {
       // Connect the wallet using your preferred method
       // For example, using Web3 and MetaMask:
       await window.ethereum.request({ method: 'eth_requestAccounts' });
-      console.log('connected');
+      console.log('Connected to wallet');
       setIsWalletConnected(true);
     } catch (error) {
       console.error('Error connecting wallet:', error);
     }
   }
 
+  function disconnectWallet() {
+    console.log('Disconnected from wallet');
+    setIsWalletConnected(false);
+  }
   return (
     <div>
       {/* Render the content based on whether the wallet is connected */}
@@ -43,7 +53,7 @@ export default function Button() {
           {/* Show the navigation bar */}
           <NavigationBar isWalletConnected={isWalletConnected} />
           {/* Render the button for wallet connection */}
-          <button onClick={connectWallet} className="WalletConnect">
+          <button  className="WalletConnect">
             {/* Provide the WagmiConfig to enable Wagmi features */}
             <WagmiConfig config={wagmiConfig}>
               {/* Render the Web3Button */}
@@ -59,7 +69,7 @@ export default function Button() {
           {/* Show the navigation bar */}
           <NavigationBar />
           {/* Render the button for wallet connection */}
-          <button onClick={connectWallet} className="WalletConnect">
+          <button className="WalletConnect">
             {/* Provide the WagmiConfig to enable Wagmi features */}
             <WagmiConfig config={wagmiConfig}>
               {/* Render the Web3Button */}

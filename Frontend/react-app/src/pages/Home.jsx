@@ -34,8 +34,8 @@ function Home() {
             Docs
             <img src={DocsPng} />
           </NavLink>
-          <NavLink className="Home-Footer-Contact" to={"/underprogress"}>
-            Contact
+          <NavLink className="Home-Footer-Contact" to={"/aboutus"}>
+            About Us
           </NavLink>
           <NavLink className="Home-Footer-Governance" to={"/governance"}>
             Governance

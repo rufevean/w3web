@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 import Viewlistings from './pages/Viewlistings.jsx';
 import Yourlisting from './pages/Yourlisting.jsx';
 import Yourlistings from './pages/YourListings.jsx';
+import Aboutus from './pages/Aboutus'
 
 function App() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
@@ -44,6 +45,7 @@ function App() {
             <Route path="/yourlisting" element={<Yourlisting />} />
             <Route path="/Viewlistings" element={<Viewlistings />} />
             <Route path="/Yourlistings" element={<Yourlistings />} />
+            <Route path="/aboutus" element={<Aboutus />} />
           </Routes>
         </BrowserRouter>
       )}
