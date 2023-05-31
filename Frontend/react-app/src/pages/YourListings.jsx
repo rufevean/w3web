@@ -9,7 +9,6 @@ import house from  '../assets/house.png'
 export default function YourListings(){
 	return(
 	<div className="ViewListings">
-			< NavigationBar />
 			< Button />
 		<div className="ViewListings-main">
 			< div className = "ViewListings-head">

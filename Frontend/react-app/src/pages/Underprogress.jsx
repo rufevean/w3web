@@ -13,7 +13,6 @@ export default function Underprogress(){
 		<div className="underprogress">
 			
 		< Button />
-			<NavigationBar/>
 			< Button />
 			<div className="apology">
 				
