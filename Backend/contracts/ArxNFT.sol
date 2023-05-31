@@ -18,7 +18,7 @@ contract ArxNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
 
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
-
+    uint256 public latestTokenid;
     struct Property {
         string leagalOwner;
         string propertyAddress;
@@ -55,6 +55,7 @@ contract ArxNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
             _propertyDescripton
         );
         _setTokenURI(tokenId, uri);
+        latestTokenid = tokenId;
     }
 
     //-------------------------------------Overrides-------------------------------------
@@ -116,6 +117,6 @@ contract ArxNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
     }
 
     function getLatestTokenId() public view returns (uint256) {
-        return _tokenIdCounter.current();
+        return latestTokenid;
     }
 }

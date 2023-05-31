@@ -9,10 +9,11 @@ pragma solidity ^0.8.9;
 //-------------------------------------imports-------------------------------------
 
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
 import "./ArxNFT.sol";
 import "./ArxToken.sol";
 
-contract ArxPropertyManager is Ownable {
+contract ArxPropertyManager is Ownable, ERC721Holder {
     //-------------------------------------variables & mappings-------------------------------------
 
     ArxNFT public arxNFT; // ArxNFT contract instance

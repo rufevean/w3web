@@ -128,7 +128,7 @@ contract ArxToken is ERC20, Ownable, ERC20Permit, ERC721Holder, ERC20Votes {
     function putSharesForSale(uint256 _price) external onlyOwner {
         sharesForSale = true; //shares for sale
         salePrice = _price; //set sale price
-        tokenPrice = salePrice / totalSupply(); //set token price
+        tokenPrice = salePrice / tokensRem; //set token price
 
         emit SharesForSale(tokenPrice);
     }
@@ -231,8 +231,7 @@ contract ArxToken is ERC20, Ownable, ERC20Permit, ERC721Holder, ERC20Votes {
         require(msg.value >= _amount * tokenPrice, "Not enough ether sent"); //verify enough ether is sent
         tokensRem -= _amount; //update shares remaining
         _mint(msg.sender, _amount); //mint tokens
-        transfer(propertyOwner, msg.value); //send ether to property owner
-
+        payable(propertyOwner).transfer(msg.value); //send ether to property owner
         emit PurchasedShare(_amount, _amount * tokenPrice);
     }
 
