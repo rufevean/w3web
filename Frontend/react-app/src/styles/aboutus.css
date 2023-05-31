@@ -1,0 +1,108 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+.Aboutus{
+/*	background: url("../assets/aboutus.png");  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.About{
+	display: flex;
+	height: 50%;
+	justify-content:center;
+	align-items: center;
+	border-radius: 15px;
+	color:black;
+	font-family: "Jura";
+	width: 80%;
+	overflow: visible;
+	margin-left: 7%;
+	margin-top: 5%;
+	gap:10px;
+	background: rgba(255,255,255,0.6);
+	padding: 50px;
+}
+
+.ruff{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+/*	background: #bfe8ff;*/
+	border-radius: 15px;
+	width: 30%;
+	gap:10px;
+	padding: 10px;
+	background: white;
+
+
+}
+.Ayan{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+/*	background: #bfe8ff;*/
+	border-radius: 15px;
+	width: 30%;
+	gap:10px;
+	padding: 10px;
+	background: white;
+	transform:s;
+
+}
+.kartik{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+/*	background: #bfe8ff;*/
+	border-radius: 15px;
+	width: 30%;
+	gap:10px;
+	padding: 10px;
+	background: white;
+}
+
+.ruff > img{
+	height: 150px;
+	margin-bottom: 3%;
+	height: 150px;
+}
+.Ayan > img{
+	height: 150px;
+	margin-bottom: 3%;
+	height: 150px;
+}
+
+.kartik > img{
+	height: 150px;
+	margin-bottom: 3%;
+	height: 150px;
+}
+
+.ruff-name{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.ruff-profession{
+	font-size:1.1rem;
+}
+
+.ruff-socials{
+	display: flex;
+	gap: 20px;
+}
+
+hr{
+	width: 50%;
+}
+
+.ruff-description{
+	width: 60%;
+	text-align: center;
+}
