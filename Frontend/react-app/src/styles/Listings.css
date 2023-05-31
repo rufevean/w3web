@@ -268,7 +268,7 @@
     border-radius: 10px;
     border: 0px transparent;
     background: none;
-    background-color: #D8768A ;
+    background-color: #6F3440 ;
     color:black;
     font-size: 1rem;
     font-family: 'Jura', sans-serif;
@@ -279,9 +279,7 @@
     width:70%;
 }
 
-.Listing-sell-Holding-button:hover{
-	cursor: pointer;
-}
+
 .governance-button{
 	background-image: url("../assets/governance3.png");
 	padding: 10px;
@@ -295,4 +293,15 @@
 	    font-weight: 1000;
     text-align: center;
 
+}
+.b1{
+	position: absolute;
+	visibility: hidden;
+	color: white;
+	margin-left: 85%;
+	margin-top: -14%;
+}
+
+.popup .Listing-main-Holding-button:hover + .b1{
+	visibility: visible;
 }

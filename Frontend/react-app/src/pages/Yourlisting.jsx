@@ -136,7 +136,7 @@ export default function Listings(){
                 <div className="Listing-main-Holding-Subtotalvalue">
                 ${subtotal1}
                 </div>
-                <button className="Listing-sell-Holding-button">
+                <button  className="Listing-sell-Holding-button ">
                 SELL STAKE
                 </button>
                 </div>
@@ -152,7 +152,7 @@ export default function Listings(){
         </div>
     </div>
 
-    
+    <div className="popup b1 ">this proprty cannot be sold</div>
 </div>
         )
 
