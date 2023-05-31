@@ -51,7 +51,7 @@ async function main() {
 
   // Set shares for sale for a specific tokenId
   const tokenId = 1; // Specify the tokenId for which you want to set shares for sale
-  const price = '0.1'; // Specify the price in Ether
+  const price = '190'; // Specify the price in Ether
   await setSharesForSale(arxPropertyManagerContract, tokenId, ethers.utils.parseEther(price));
 
   // Invoke payable functions in the ArxToken contract using the external wallet

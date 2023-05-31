@@ -1,6 +1,6 @@
 {
     "name":"Property #1",
-    "description":"3 bhk flat in Noida",
+    "description":"8 BHK Villa in Los Santos",
     "image":"",
     "external_url":"",
     "attributes": [
@@ -10,11 +10,11 @@
         },
         {
             "trait_type": "Property Type",
-            "value": "Flat 3BHK"
+            "value": "Villa 8BHK"
         },
         {
             "trait_type": "Property Address",
-            "value": "Random Noida Address"
+            "value": "A 0014, 68th st. Los Santos, San Andreas, USA"
         },
         {
             "trait_type": "Property Size",

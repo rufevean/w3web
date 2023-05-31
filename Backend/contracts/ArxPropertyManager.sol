@@ -107,7 +107,7 @@ contract ArxPropertyManager is Ownable {
             _propertyDescripton
         ); // Minting the ArxNFT for the entered property details
         arxNFTTokenIds.push(tokenId); // Pushing the tokenId to the ArxNFT tokenIds array
-        arxToken = new ArxToken(_totalSupply, msg.sender, _name, _symbol); // Deploying the ArxToken contract for this nft
+        arxToken = new ArxToken(_totalSupply, _to, _name, _symbol); // Deploying the ArxToken contract for this nft
         arxTokenIdToArxTokenAddress[tokenId] = address(arxToken); // Mapping the ArxToken contract address to ArxNFT tokenId
         arxNFT.approve(address(arxToken), tokenId); // Approving the ArxToken contract to transfer the ArxNFT tokenId
         arxToken.initialize(address(arxNFT), tokenId, address(this)); // Initializing the ArxToken contract
