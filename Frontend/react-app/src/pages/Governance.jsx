@@ -6,7 +6,6 @@ export default function Governance(){
 	return(
 
 			<div className="Governance">
-			  < NavigationBar />
 			  < Button />
 			  < div className="Governance-Head">
 			    <div className="Governance-Head-title">

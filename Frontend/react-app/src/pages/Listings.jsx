@@ -11,7 +11,6 @@ export default function Listings(){
   const subtotal1 = count1 * 13000;
     return(
 <div className="Listings">
-    <NavigationBar />
     < Button />
     <div className="Listings-body">
         <div className="Listing-info">
