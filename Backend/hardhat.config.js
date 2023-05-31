@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@openzeppelin/hardhat-upgrades");
+require("dotenv").config({ path: __dirname + "/.env" });
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -12,14 +13,9 @@ module.exports = {
     privateKeys: [""],
   },
   networks: {
-    xinfin: {
-      url: process.env.XINFIN_NETWORK_URL,
+    apothem: {
+      url: "https://erpc.apothem.network",
       accounts: [process.env.PRIVATE_KEY],
     },
-     apothem: {
-      url: process.env.APOTHEM_NETWORK_URL,
-      accounts: [process.env.PRIVATE_KEY]
-    }
   },
-
 };
