@@ -3,9 +3,9 @@
 
 Welcome to our project Arx, we are excited to showcase our innovative solution that brings real estate and blockchain together.  we'll give you an overview of our website and explain how it works. Let's dive in!
 
-## Demo
+## Website 
 
-Insert gif or link to demo
+https://example.com
 
 
 ## Installation
@@ -54,7 +54,7 @@ Setup the .env file with the api and private key
 Start the server
 
 ```bash
-  Npx hardhat scripts/deploy.js --network apothem
+  Npx hardhat scripts/_deploy_and_execute.js --network apothem
 ```
 
 ## Features
@@ -80,7 +80,7 @@ With the transparency and security of blockchain technology, our project ensures
 ## Authors
 
 - [@Rufevean](https://www.github.com/rufevean) - Front end
-- [@Ayan](https://github.com/Sud0-AP) - Back end 
+- [@0xSud0_](https://github.com/Sud0-AP) - Back end 
 - [@Kartik](https://github.com/Kartiklamba4)
 
 
