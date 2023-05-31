@@ -1,19 +1,54 @@
-import Home from "./pages/Home.jsx";
+import "./init";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Docs from "./pages/Docs.jsx";
 import "./app.css";
-import Pools from "./pages/Pools.jsx"   
+import Pools from "./pages/Pools.jsx";
+import Listings from "./pages/Listings.jsx";
+import Governance from './pages/Governance.jsx';
+import Home from "./pages/Home.jsx";
+import Underprogress from './pages/Underprogress';
+import Preloader from "./pages/Preloader";
+import { useState, useEffect } from "react";
+import Viewlistings from './pages/Viewlistings.jsx';
+import Yourlisting from './pages/Yourlisting.jsx';
+import Yourlistings from './pages/YourListings.jsx';
 
 function App() {
-    return (
+  const [isWalletConnected, setIsWalletConnected] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handlePreloaderClick = () => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  return (
+    <div>
+      {/* Check if the app is still loading */}
+      {isLoading ? (
+        <div onClick={handlePreloaderClick}>
+          {/* Show the preloader component */}
+          <Preloader />
+        </div>
+      ) : (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/docs" element={<Docs />} />
-                <Route path="/pools" element={<Pools />} />
-            </Routes>
+          <Routes>
+            {/* Define routes and their corresponding components */}
+            <Route path="/" element={<Home />} />
+            <Route path="/docs" element={<Docs />} />
+            <Route path="/pools" element={<Pools />} />
+            <Route path="/listings" element={<Listings />} />
+            <Route path="/governance" element={<Governance />} />
+            <Route path="/underprogress" element={<Underprogress />} />
+            <Route path="/yourlisting" element={<Yourlisting />} />
+            <Route path="/Viewlistings" element={<Viewlistings />} />
+            <Route path="/Yourlistings" element={<Yourlistings />} />
+          </Routes>
         </BrowserRouter>
-    );
+      )}
+    </div>
+  );
 }
 
 export default App;

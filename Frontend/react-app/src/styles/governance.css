@@ -1,0 +1,110 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+
+
+.Governance{
+	background : url("../assets/governance3.png");
+	width: 100vw;
+	height: 190vh;
+	letter-spacing: 0.06rem; 
+	color:white;
+	font-family: 'Jura';
+}
+
+.Governance-Head{
+
+	margin-left: 10%;
+	margin-top: 5%;
+	letter-spacing: 0.1rem;
+}
+
+.Governance-Head-title{
+	font-size: 1.5rem;
+
+	opacity: 0.6;
+	font-weight:700 ;
+	margin-bottom: 1%;
+}
+
+.Governance-Head-sub{
+	font-size: 2rem;
+	width: 40%;
+	font-weight: 700;
+	letter-spacing: 0.2rem;
+}
+.Governance-body{
+	margin: 7% 18% 9% 17%;
+	text-align: center;
+	font-size: 1.25rem;	
+}
+
+
+.Governance-quote{
+	margin-top: 7%;
+	opacity: 0.7;
+	display: flex;
+
+}
+
+.Governance-quote-body{
+/*	width: 55%;*/
+	font-size: 1.5rem;
+	margin: 20px auto;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 0.2rem;
+/*	margin-left: 25%;*/
+}
+
+.Governance-quote > hr{
+	width: 25%;
+	border-width: 1px 0px 1px 0px;
+	border-radius: 20px;
+}
+.Governance-Token{
+	margin-right: 10%;
+	text-align: right;
+	margin-top: 5%;
+}
+
+.Governance-Token-title{
+	font-size: 1.5rem;
+	opacity: 0.6;
+	font-weight:700 ;
+	letter-spacing: 0.1rem;
+	margin-bottom: 1%;
+}
+
+.Governance-Token-body{
+	font-size : 2rem;
+	letter-spacing: 0.2rem;
+	margin-left: 60%;
+	font-weight: 700;
+}
+
+.Governance-info1{
+	margin: 7% 20% auto 20%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.Governance-info2{
+	margin: 2% 20% auto 20%;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+.Governance-button{
+	border-radius: 10px;
+    border: 0px transparent;
+    cursor: pointer;
+    background: none; 
+    background-color: #D8768A ;
+    color:black;
+    font-size: 1.3rem;
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    padding: 15px;
+    margin: 5% auto auto calc( 46% - 0.3rem) ;
+    letter-spacing: 0.1rem;
+}
