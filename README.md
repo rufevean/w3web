@@ -80,7 +80,7 @@ With the transparency and security of blockchain technology, our project ensures
 ## Authors
 
 - [@Rufevean](https://www.github.com/rufevean) - Front end
-- [@Ayan](https://github.com/Sud0-AP) - Back end 
+- [@0xSud0_](https://github.com/Sud0-AP) - Back end 
 - [@Kartik](https://github.com/Kartiklamba4)
 
 
