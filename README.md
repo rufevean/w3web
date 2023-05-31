@@ -54,7 +54,7 @@ Setup the .env file with the api and private key
 Start the server
 
 ```bash
-  Npx hardhat scripts/deploy.js --network apothem
+  Npx hardhat scripts/_deploy_and_execute.js --network apothem
 ```
 
 ## Features
