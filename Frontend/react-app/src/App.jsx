@@ -17,6 +17,10 @@ import Aboutus from './pages/Aboutus'
 function App() {
   const [isWalletConnected, setIsWalletConnected] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", e => {
+    cursor.setAttribute("style", "top : " + (e.pageY - 35) + "px;left : " + (e.pageX - 35) + "px")
+})
 
   const handlePreloaderClick = () => {
     setTimeout(() => {
@@ -43,12 +47,13 @@ function App() {
             <Route path="/governance" element={<Governance />} />
             <Route path="/underprogress" element={<Underprogress />} />
             <Route path="/yourlisting" element={<Yourlisting />} />
-            <Route path="/Viewlistings" element={<Viewlistings />} />
+            <Route path="/Viewlistings" element={<Viewlistings />} />s
             <Route path="/Yourlistings" element={<Yourlistings />} />
             <Route path="/aboutus" element={<Aboutus />} />
           </Routes>
         </BrowserRouter>
       )}
+          <div class="cursor" id="cursor"></div>
     </div>
   );
 }
