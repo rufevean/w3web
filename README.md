@@ -2,11 +2,9 @@
 # Arx
 
 Welcome to our project Arx, we are excited to showcase our innovative solution that brings real estate and blockchain together.  we'll give you an overview of our website and explain how it works. Let's dive in!
+  
 
-## Website 
-
-https://example.com
-
+[Website](https://arx-frontend.vercel.app/)
 
 ## Installation
 ### Clone the project [Front-end]
