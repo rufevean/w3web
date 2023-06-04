@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Button from "../components/Button";
 import house from "../assets/house.png";
 import governance from "../assets/governance.png";
+import '../styles/viewlistings.css'
 
 export default function ViewListings() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -56,7 +57,7 @@ export default function ViewListings() {
               />
               <div className="listing-title">{card.title}</div>
               <div className="listing-price">{card.price}</div>
-              <NavLink to={`/listings/${card.id}`} className="Listings-view">
+              <NavLink to={`/listings`} className="Listings-view">
                 <button className="Listings-button">VIEW</button>
               </NavLink>
             </div>
