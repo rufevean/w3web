@@ -1,118 +1,110 @@
- @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
-.ViewListings{
+.ViewListings {
 	height: 100vh;
-	background: url("../assets/Gradient.png");
 	overflow: hidden;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-
-}
-
-.ViewListings-main{
+	background: linear-gradient(to bottom right, #001416, #59242b);
+  }
+  
+  .ViewListings-main {
 	display: grid;
-	grid-template-rows: 1fr  10fr;
+	grid-template-rows: 1fr 10fr;
 	width: 100vw;
 	margin: 0% 5%;
-}
-
-
-.ViewListings-head-cont{
+  }
+  
+  .ViewListings-head-cont {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-}
-
-.ViewListings-head{
+  }
+  
+  .ViewListings-head {
 	grid-row: 1;
-}
-.ViewListings-head-title{
+  }
+  
+  .ViewListings-head-title {
 	font-size: 2.5rem;
-/*	text-align: center;*/
 	margin-top: 1%;
 	opacity: 0.8;
 	color: white;
-}
-
-.ViewListings-head-body{
+  }
+  
+  .ViewListings-head-body {
 	border-radius: 10px;
 	margin-top: 1%;
 	height: 30px;
-/*	border: 0px solid transparent;*/
-	border-top: 1px solid white;
-	border-left: 1px solid black;
-	border-right: 1px solid white;
-	border-bottom: 1px solid transparent;
-	background: url(../assets/search-icon-black.png) no-repeat 10px 10px , white ;
-	text-align: right;
+	background: url(../assets/search-icon-black.png) no-repeat 10px center, white;
+	text-align: left;
+	padding-left: 40px;
 	width: 90%;
-}
-
-
-.ViewListings-container{
+  }
+  
+  .ViewListings-container {
 	margin-top: 2%;
 	grid-row: 2;
-	border-radius: 15px 15px 0 0;
-	background: rgba(255,255,255,0.2);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.2);
 	width: 90%;
-}
-
-.listing1{
-	margin-left: 5%;
-	margin-top: 3%;
-	height: 28%;
-	width: 25%;
-	background-color: #001416;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 5%;
+  }
+  
+  .listing {
+	margin: 10px;
+	height: 250px;
+	width: 250px;
 	border-radius: 10px;
-	display:flex;
+	display: flex;
 	flex-direction: column;
-text-align: center;
-overflow: hidden;
-}
-
-.listing1-image{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	color: white;
+	background: linear-gradient(to bottom right, #001416, #59242b);
+  }
+  
+  .listing-image {
 	padding: 10px;
 	overflow: hidden;
-}
-
-.listing1 > div{
+	width: 80%;
+  }
+  
+  .listing > div {
 	font-size: 1.2rem;
 	font-family: "Jura";
 	padding: 5px;
 	overflow: hidden;
-	color:white;
-}
-
-.Listings-view{
+  }
+  
+  .Listings-view {
 	padding: 10px;
 	overflow: hidden;
-}
-
-
-.Listings-button{
+  }
+  
+  .Listings-button {
 	border-radius: 10px;
-    border: 0px transparent;
-    cursor: pointer;
-    background: none; 
-    background-color: #D8768A ;
-    color:black;
-    font-size: 1.1rem;
-    font-family: 'Jura', sans-serif;
-    font-weight: 700;
-    padding: 10px 20px;
-    margin: 1% auto 2% auto;
-    letter-spacing: 0.1rem;
-
-}
-
-.listing1:hover{
-	background-color: #001110 ;
-}
-
-
-.governance-button{
+	border: none;
+	cursor: pointer;
+	background-color: #d8768a;
+	color: black;
+	font-size: 1.1rem;
+	font-family: "Jura", sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	margin: 1% auto 2% auto;
+	letter-spacing: 0.1rem;
+  }
+  
+  .listing:hover {
+	background-color: #001110;
+  }
+  
+  .governance-button {
 	background-image: url("../assets/governance3.png");
 	width: 10%;
 	margin-top: 2%;
 	margin-left: 40%;
-}
+  }
+  

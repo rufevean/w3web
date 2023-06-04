@@ -1,44 +1,68 @@
-import NavigationBar from '../components/NavigationBar'
-import '../styles/viewlistings.css'
-import Button from '../components/Button'
-import search from '../assets/search-icon.svg'
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import house from  '../assets/house.png'
+import Button from "../components/Button";
+import house from "../assets/house.png";
+import governance from "../assets/governance.png";
 
-export default function ViewListings(){
-	return(
-	<div className="ViewListings">
-			< Button />
-		<div className="ViewListings-main">
-			< div className = "ViewListings-head">
-					< div className="ViewListings-head-title"> LISTINGS </div>
-					< div className="ViewListings-head-cont">
-						< input id="ViewListings-head-body" className="ViewListings-head-body" type="text" placeholder="San avenure.." />
-						< label htmlFor="ViewListings-head-body"> </label>
-						
-					</div>
-			</div>
-			<  div className="ViewListings-container">
-				< div className="listing1">
-					
-				<img src={house} className="listing1-image" />
-				<div className="listing1-title">
-				LOS SANTOS PROPERTIES
-				</div>
-				<div className="listing1-price">13,000,000</div>
-				<NavLink to={"/listings"}   className="Listings-view">
-					  <button className="Listings-button">
-			    VIEW
-			  </button> 
+export default function ViewListings() {
+  const [searchTerm, setSearchTerm] = useState("");
 
-				</NavLink>
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
 
-			
+  const filteredCards = [
+    {
+      id: 1,
+      title: "LOS SANTOS PROPERTIES",
+      price: "13,000,000",
+      image: house,
+    },
+    {
+      id: 2,
+      title: "SUNNYVILLE ESTATES",
+      price: "9,500,000",
+      image: governance,
+    },
+  ].filter((card) =>
+    card.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
-				</div>
-			</div>
-		</div>	
-	</div>
-	)
-
+  return (
+    <div className="ViewListings">
+      <Button />
+      <div className="ViewListings-main">
+        <div className="ViewListings-head">
+          <div className="ViewListings-head-title">LISTINGS</div>
+          <div className="ViewListings-head-cont">
+            <input
+              id="ViewListings-head-body"
+              className="ViewListings-head-body"
+              type="text"
+              placeholder="Search..."
+              value={searchTerm}
+              onChange={handleSearch}
+            />
+            <label htmlFor="ViewListings-head-body"></label>
+          </div>
+        </div>
+        <div className="ViewListings-container">
+          {filteredCards.map((card) => (
+            <div className="listing" key={card.id}>
+              <img
+                src={card.image}
+                className="listing-image"
+                alt="House"
+              />
+              <div className="listing-title">{card.title}</div>
+              <div className="listing-price">{card.price}</div>
+              <NavLink to={`/listings/${card.id}`} className="Listings-view">
+                <button className="Listings-button">VIEW</button>
+              </NavLink>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }

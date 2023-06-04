@@ -6,9 +6,28 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { arbitrum, mainnet, polygon } from 'wagmi/chains';
 import React, { useState,useEffect } from 'react';
 import NavigationBar from '../components/NavigationBar';
-
 export default function Button() {
-  const chains = [arbitrum, mainnet, polygon];
+
+
+  const xdcTestnet = {
+    id: 51,
+    name: 'Apothem Network',
+    network: 'xdc-testnet',
+    nativeCurrency: {
+      decimals: 18,
+      name: 'TXDC',
+      symbol: 'TXDC',
+    },
+    rpcUrls: {
+      default: { http: ['https://erpc.apothem.network'] },
+      public: { http: ['https://erpc.apothem.network'] },
+    },
+    blockExplorers: {
+      xinfin: { name: 'XinFin', url: 'https://explorer.apothem.network' },
+      default: { name: 'Blocksscan', url: 'https://apothem.blocksscan.io' },
+    },
+  };
+  const chains = [xdcTestnet];
   const projectId = '62a2482225e42c242517244788886f64';
   const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);
   const wagmiConfig = createConfig({
@@ -84,4 +103,3 @@ export default function Button() {
     </div>
   );
 }
-
