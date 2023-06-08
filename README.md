@@ -55,6 +55,20 @@ Start the server
   Npx hardhat scripts/_deploy_and_execute.js --network apothem
 ```
 
+## Deployed Contracts on XDC Network
+
+ArxNFT Contract: [Click here](https://explorer.apothem.network/address/xdcc6029c09b6a52997e9a5b52c3b4e43ea85fee5b5#transactions)
+
+ArxToken Contract for Property #1: [Click here](https://explorer.apothem.network/address/xdcAF24fcA11A68D692625c90D9b574ff0dD24FA784#transactions)
+
+ArxPropertyManager contract: [Click here](https://explorer.apothem.network/address/xdc913bd6bc4730a0ec0909074cc4318423cab4c250#transactions)
+
+ArxTokenGovernance contract: [Click here](https://explorer.apothem.network/address/0xa43C01583bE1232363E733df57e6cb8cb6e7e0bD#transactions)
+
+TimeLock contract: [Click here](https://explorer.apothem.network/address/xdcd888c3268f61abc2b4579519f09f71077fa2d2aa#transactions)
+
+Transaction Hash of the Bought Tokens: [Click Here](https://explorer.apothem.network/txs/0xdf24e78bc895d82187909aa11f9810f9b4e21d1c899323bdda7b54076cd8bc5e#overview) 
+
 ## Features
 
 ### Tokenization of Real Estate 
