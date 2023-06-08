@@ -14,6 +14,7 @@ module.exports = {
   },
   networks: {
     apothem: {
+      timeout: 100000000,
       url: "https://erpc.apothem.network",
       accounts: [process.env.PRIVATE_KEY],
     },

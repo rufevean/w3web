@@ -132,7 +132,7 @@ async function deployContracts() {
     "\nBuying the shares for the latest token ID... from another account\n"
   );
 
-  let arxToken = await ArxToken.attach(arxTokenAddress); //.connect(signer1);
+  let arxToken = await ArxToken.attach(arxTokenAddress).connect(signer1);
 
   let payment = (await arxToken.getTokenPrice(100)) / 1000000000000000000;
 

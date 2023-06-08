@@ -4,12 +4,24 @@ import house from '../assets/house.png'
 import React, { useState } from 'react';
 import Button from '../components/Button.jsx'
 import { NavLink } from "react-router-dom";
+import {useContractRead } from 'wagmi';
+import {UseContractConfig } from 'wagmi/dist/declarations/src/hooks/UseContractConfig';
+
 export default function Listings(){
       const [count, setCount] = useState(0);
   const subtotal = count * 13000;
         const [count1, setCount1] = useState(0);
   const subtotal1 = count1 * 13000;
-    return(
+
+  
+
+const {data: sharePrice } = useContractRead({
+    
+});
+
+
+
+  return(
 <div className="Listings">
     < Button />
     <div className="Listings-body">
